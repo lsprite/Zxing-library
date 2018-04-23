@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mining.app.zxing"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <application>
+          <activity
+            android:name="com.mining.app.zxing.activity.MipcaActivityCapture"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

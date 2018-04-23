@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" />
+
+        <com.mining.app.zxing.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true" >
+
+            <include
+                android:id="@+id/backBtn"
+                layout="@layout/btn_back_nobg" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/zxing_black"
+                android:textSize="@dimen/zxing_text18dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>
